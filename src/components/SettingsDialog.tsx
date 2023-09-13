@@ -44,8 +44,7 @@ export const SettingsDialog: React.FC<{
   };
 
   const keyIsValid = (key: string | undefined) => {
-    const pattern = /^(sk-[a-zA-Z0-9]{48}|[a-fA-F0-9]{32})$/;
-    return key && pattern.test(key);
+    return true
   };
 
   const urlIsValid = (url: string | undefined) => {
